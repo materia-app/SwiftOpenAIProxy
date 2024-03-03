@@ -78,6 +78,18 @@
       <CommandLineArguments>
          <CommandLineArgument
             argument = "--port 8034"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "--hostname 192.168.178.22"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "--port 8080"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "--target https://api.openai.com"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
@@ -90,52 +102,52 @@
          <EnvironmentVariable
             key = "OpenAI-Organization"
             value = "org..."
-            isEnabled = "YES">
+            isEnabled = "NO">
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "appTeamId"
             value = ""
-            isEnabled = "YES">
+            isEnabled = "NO">
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "appBundleId"
             value = "com.example.app"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "enableAttestation"
             value = "0"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "allowKeyPassthrough"
             value = "1"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "JWTPrivateKey"
-            value = "...="
+            value = "cPq59yZ/HnKSBN4kO141SJ9L2ORoGiY0JkTtLoovgHY="
             isEnabled = "YES">
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "IAPPrivateKey"
             value = "-----BEGIN PRIVATE KEY-----\\nREPLACE_NEWLINES\\n-----END PRIVATE KEY-----"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "IAPIssuerId"
             value = "...-...-4...-..."
-            isEnabled = "YES">
+            isEnabled = "NO">
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "IAPKeyId"
             value = ""
-            isEnabled = "YES">
+            isEnabled = "NO">
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "appAppleId"
             value = ""
-            isEnabled = "YES">
+            isEnabled = "NO">
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "PORT"
@@ -155,32 +167,32 @@
          <EnvironmentVariable
             key = "userPermanentBlock"
             value = ""
-            isEnabled = "YES">
+            isEnabled = "NO">
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "userHourlyRateLimit"
             value = ""
-            isEnabled = "YES">
+            isEnabled = "NO">
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "userMinuteRateLimit"
             value = ""
-            isEnabled = "YES">
+            isEnabled = "NO">
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "anonPermanentBlock"
             value = ""
-            isEnabled = "YES">
+            isEnabled = "NO">
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "anonHourlyRateLimit"
             value = ""
-            isEnabled = "YES">
+            isEnabled = "NO">
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "anonMinuteRateLimit"
             value = ""
-            isEnabled = "YES">
+            isEnabled = "NO">
          </EnvironmentVariable>
       </EnvironmentVariables>
    </LaunchAction>

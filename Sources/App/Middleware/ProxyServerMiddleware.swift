@@ -16,6 +16,7 @@ import AsyncHTTPClient
 import Hummingbird
 import HummingbirdCore
 import Logging
+import Foundation
 
 /// Middleware forwarding requests onto another server
 public struct HBProxyServerMiddleware: HBMiddleware {
@@ -77,7 +78,6 @@ public struct HBProxyServerMiddleware: HBMiddleware {
 extension HBRequest {
     /// create AsyncHTTPClient request from Hummingbird Request
     func ahcRequest(uri: String, host: String, eventLoop: EventLoop) throws -> HTTPClient.Request {
-        
         var headers = self.headers
         headers.remove(name: "host")
 
@@ -98,7 +98,7 @@ extension HBRequest {
                 headers: headers,
                 body: .stream(length: contentLength) { writer in
                     return stream.consumeAll(on: eventLoop) { byteBuffer in
-                        writer.write(.byteBuffer(byteBuffer))
+                        return writer.write(.byteBuffer(byteBuffer))
                     }
                 }
             )
