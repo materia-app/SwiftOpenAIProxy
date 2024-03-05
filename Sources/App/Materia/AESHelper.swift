@@ -11,7 +11,7 @@ import Foundation
 //#else
 import Crypto
 //#endif
-import CryptoKit
+//import CryptoKit
 
 class AESHelper {
     private static let symmetricKeyString = "nIMf7UcJ0xZ89ePLPS97VPMFA2WhTcM/V8sh8Ylv/14="
