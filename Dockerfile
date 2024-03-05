@@ -62,4 +62,4 @@ EXPOSE 8080
 
 # Start the Vapor service when the image is run, default to listening on 8080 in production environment
 ENTRYPOINT ["./App"]
-CMD ["--hostname", "0.0.0.0", "--port", "8080"]
+CMD ["--hostname", "swiftopenaiproxy-production-1376.up.railway.app", "--port", "8080", "--target", "https://api.openai.com"]
