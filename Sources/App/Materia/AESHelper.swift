@@ -6,12 +6,12 @@
 //
 
 import Foundation
-//#if os(macOS)
-//import CommonCrypto
-//#else
+#if os(macOS)
+import CommonCrypto
+import CryptoKit
+#else
 import Crypto
-//#endif
-//import CryptoKit
+#endif
 
 class AESHelper {
     private static let symmetricKeyString = "nIMf7UcJ0xZ89ePLPS97VPMFA2WhTcM/V8sh8Ylv/14="
