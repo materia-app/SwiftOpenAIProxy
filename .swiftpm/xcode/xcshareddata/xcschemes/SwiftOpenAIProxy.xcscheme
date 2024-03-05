@@ -127,7 +127,7 @@
          <EnvironmentVariable
             key = "JWTPrivateKey"
             value = "cPq59yZ/HnKSBN4kO141SJ9L2ORoGiY0JkTtLoovgHY="
-            isEnabled = "YES">
+            isEnabled = "NO">
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "IAPPrivateKey"
@@ -157,12 +157,12 @@
          <EnvironmentVariable
             key = "tokenExpiration"
             value = "4"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "enableRateLimiter"
             value = "0"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "userPermanentBlock"

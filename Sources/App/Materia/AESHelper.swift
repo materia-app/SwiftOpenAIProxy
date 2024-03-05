@@ -6,7 +6,11 @@
 //
 
 import Foundation
+#if canImport(CommonCrypto)
 import CommonCrypto
+#else
+import Crypto
+#endif
 import CryptoKit
 
 class AESHelper {
