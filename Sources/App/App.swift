@@ -33,6 +33,8 @@ struct HummingbirdArguments: AsyncParsableCommand, AppArguments {
                 serverName: "SwiftOpenAIProxyServer"
             )
         )
+        print("Starting server on \(self.hostname):\(port)")
+        
         try await app.configure(self)
         try app.start()
         await app.asyncWait()
