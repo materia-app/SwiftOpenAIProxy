@@ -19,7 +19,7 @@ struct OpenAIKeyMiddleware: HBMiddleware {
         }
         
         var headers = request.headers
-        if headers["Authorization"].first == "Bearer " {
+        if headers["Authorization"].first == "Bearer none" {
             //        headers.replaceOrAdd(name: "OpenAI-Organization", value: org)
             headers.replaceOrAdd(name: "Authorization", value: "Bearer \(apiKey)")
         }
